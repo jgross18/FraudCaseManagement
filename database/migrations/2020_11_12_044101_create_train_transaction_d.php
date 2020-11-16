@@ -13,10 +13,7 @@ class CreateTrainTransactionD extends Migration
      */
     public function up()
     {
-        Schema::create('train_transaction_d', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-        });
+        //
     }
 
     /**

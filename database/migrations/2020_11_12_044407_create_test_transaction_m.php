@@ -13,10 +13,7 @@ class CreateTestTransactionM extends Migration
      */
     public function up()
     {
-        Schema::create('test_transaction_m', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
-        });
+      //
     }
 
     /**

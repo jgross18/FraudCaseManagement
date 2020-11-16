@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTrainTransactionV301V350 extends Migration
+class CreateTrainTransactionV301V339 extends Migration
 {
     /**
      * Run the migrations.

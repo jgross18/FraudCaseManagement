@@ -14,7 +14,7 @@ class CreateTestIdentities extends Migration
     public function up()
     {
         Schema::create('test_identities', function (Blueprint $table) {
-            $table->foreignId('test_transaction_id');
+            $table->foreignId('test_transactions_id');
             $table->integer('id_01')->nullable();
             $table->integer('id_02')->nullable();
             $table->decimal('id_03', 6, 2)->nullable();
@@ -70,6 +70,6 @@ class CreateTestIdentities extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('test_transactions');
+        Schema::dropIfExists('test_identities');
     }
 }

@@ -15,6 +15,7 @@ class CreateTrainTransactions extends Migration
     {
         Schema::create('train_transactions', function (Blueprint $table) {
             $table->id();
+            $table->boolean('is_fraud');
             $table->bigInteger('datetime')->nullable();
             $table->decimal('amount', 10, 2)->nullable();
             $table->string('product_code', 100)->nullable();
@@ -26,12 +27,10 @@ class CreateTrainTransactions extends Migration
             $table->string('card_6', 100)->nullable();
             $table->decimal('addr_1', 5, 2)->nullable();
             $table->decimal('addr_2', 5, 2)->nullable();
-            $table->decimal('dist_1', 5, 2)->nullable();
+            $table->decimal('dist_1', 10, 2)->nullable();
             $table->decimal('dist_2', 10, 2)->nullable();
             $table->string('p_emaildomain', 300)->nullable();
             $table->string('r_emaildomain', 300)->nullable();
-
-
         });
     }
 
@@ -42,6 +41,6 @@ class CreateTrainTransactions extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('train_transaction');
+        Schema::dropIfExists('train_transactions');
     }
 }

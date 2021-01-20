@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\train_identity;
+use App\Models\TrainIdentity;
 use Illuminate\Database\Seeder;
 use League\Csv\Reader;
 
@@ -21,9 +21,9 @@ class train_identity_seeder extends Seeder
         $csv->each(function ($row)  {
             // return false if there is no data
             if ( empty($row)) return false;
-               return  train_identity::insert(
+               return  TrainIdentity::insert(
                     array(
-                        'train_transaction_id' => $row[0],
+                        'train_transactions_id' => $row[0],
                         'id_01' => $row[1] ? $row[1] : null,
                         'id_02' => $row[2] ? $row[2] : null,
                         'id_03' => $row[3] ? $row[3] : null,

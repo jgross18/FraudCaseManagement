@@ -13,9 +13,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
-        $this->call(train_identity_seeder::class);
-        $this->call(test_identity_seeder::class);
+        // Training Data Seeders
+      //  $this->call(train_identity_seeder::class);
+      //  $this->call(train_transaction_seeder::class);
+
+        // Testing Data Seeders
+    //    $this->call(test_identity_seeder::class);
+        $this->call(test_transaction_seeder::class);
 
     }
 }

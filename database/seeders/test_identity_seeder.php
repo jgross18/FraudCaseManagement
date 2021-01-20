@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\test_identity;
+use App\Models\TestIdentity;
 use Illuminate\Database\Seeder;
 use League\Csv\Reader;
 
@@ -21,9 +21,9 @@ class test_identity_seeder extends Seeder
         $csv->each(function ($row)  {
             // return false if there is no data
             if ( empty($row)) return false;
-               return  test_identity::insert(
+               return  TestIdentity::insert(
                     array(
-                        'test_transaction_id' => $row[0],
+                        'test_transactions_id' => $row[0],
                         'id_01' => $row[1] ? $row[1] : null,
                         'id_02' => $row[2] ? $row[2] : null,
                         'id_03' => $row[3] ? $row[3] : null,

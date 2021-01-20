@@ -26,7 +26,7 @@ class CreateTestTransactions extends Migration
             $table->string('card_6', 100)->nullable();
             $table->decimal('addr_1', 5, 2)->nullable();
             $table->decimal('addr_2', 5, 2)->nullable();
-            $table->decimal('dist_1', 5, 2)->nullable();
+            $table->decimal('dist_1', 10, 2)->nullable();
             $table->decimal('dist_2', 10, 2)->nullable();
             $table->string('p_emaildomain', 300)->nullable();
             $table->string('r_emaildomain', 300)->nullable();
@@ -40,6 +40,6 @@ class CreateTestTransactions extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('test_transaction');
+        Schema::dropIfExists('test_transactions');
     }
 }

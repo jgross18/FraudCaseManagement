@@ -14,7 +14,7 @@ class CreateTrainIdentities extends Migration
     public function up()
     {
         Schema::create('train_identities', function (Blueprint $table) {
-            $table->foreignId('train_transaction_id');  
+            $table->foreignId('train_transactions_id');  
             $table->integer('id_01')->nullable();
             $table->integer('id_02')->nullable();
             $table->decimal('id_03', 6, 2)->nullable();
@@ -27,7 +27,6 @@ class CreateTrainIdentities extends Migration
             $table->decimal('id_10', 6, 2)->nullable();
             $table->decimal('id_11', 10, 2)->nullable();
             $table->enum('id_12', ['Found', 'NotFound'])->nullable();
-
             $table->decimal('id_13', 10, 2)->nullable();
             $table->decimal('id_14', 10, 2)->nullable();
             $table->string('id_15', 100)->nullable();
@@ -40,7 +39,6 @@ class CreateTrainIdentities extends Migration
             $table->decimal('id_22', 6, 2)->nullable();
             $table->string('id_23', 1000)->nullable();
             $table->decimal('id_24', 6, 2)->nullable();
-
             $table->decimal('id_25', 6, 2)->nullable();
             $table->decimal('id_26', 6, 2)->nullable();
             $table->string('id_27', 1000)->nullable();
@@ -53,11 +51,8 @@ class CreateTrainIdentities extends Migration
             $table->string('id_34', 1000)->nullable();
             $table->string('id_35', 10)->nullable();
             $table->string('id_36', 10)->nullable();
-
             $table->string('id_37', 10)->nullable();
             $table->string('id_38', 10)->nullable();
-    
-
             $table->string('device_type', 500)->nullable();
             $table->string('device_info', 2000)->nullable();
         });
@@ -70,6 +65,6 @@ class CreateTrainIdentities extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('train_identity');
+        Schema::dropIfExists('train_identities');
     }
 }

@@ -1,14 +1,21 @@
 Requirements:
 
 PHP
+
 Composer
+
 Laravel
+
 NPM
+
 
 Clone 
 
+
 Composer Install 
+
 Npm Install
+
 
 Set up .env file to match your database
 

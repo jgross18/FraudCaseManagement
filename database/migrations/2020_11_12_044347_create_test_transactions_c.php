@@ -14,7 +14,7 @@ class CreateTestTransactionsC extends Migration
     public function up()
     {
       Schema::create('test_transactions_c', function (Blueprint $table) {
-        $table->foreignId('test_transactions_id');
+        $table->foreignId('test_transaction_id');
         $table->integer('c1')->nullable();
         $table->integer('c2')->nullable();  
         $table->integer('c3')->nullable();  

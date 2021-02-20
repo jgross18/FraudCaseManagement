@@ -14,7 +14,7 @@ class CreateTrainTransactionsV301V339 extends Migration
     public function up()
     {
         Schema::create('train_transactions_v301-v339', function (Blueprint $table) {
-            $table->foreignId('train_transactions_id');
+            $table->foreignId('train_transaction_id');
             $table->decimal('v301', 10, 2)->nullable();
             $table->decimal('v302', 10, 2)->nullable();
             $table->decimal('v303', 10, 2)->nullable();  

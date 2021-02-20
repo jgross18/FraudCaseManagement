@@ -15,7 +15,7 @@ class CreateTestTransactionsV301V339 extends Migration
     {
    
         Schema::create('test_transactions_v301-v339', function (Blueprint $table) {
-            $table->foreignId('test_transactions_id');
+            $table->foreignId('test_transaction_id');
             $table->decimal('v301', 10, 2)->nullable();
             $table->decimal('v302', 10, 2)->nullable();
             $table->decimal('v303', 10, 2)->nullable();  

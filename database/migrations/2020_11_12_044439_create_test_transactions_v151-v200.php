@@ -14,7 +14,7 @@ class CreateTestTransactionsV151V200 extends Migration
     public function up()
     {
         Schema::create('test_transactions_v151-v200', function (Blueprint $table) {
-            $table->foreignId('test_transactions_id');
+            $table->foreignId('test_transaction_id');
             $table->decimal('v151', 10, 2)->nullable();
             $table->decimal('v152', 10, 2)->nullable();
             $table->decimal('v153', 10, 2)->nullable();  

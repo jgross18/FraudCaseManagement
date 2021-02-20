@@ -56,7 +56,7 @@ class train_transaction_seeder extends Seeder
 
             TrainTransactionC::insert(
                 array(
-                    'train_transactions_id' => $row[0],
+                    'train_transaction_id' => $row[0],
                     'c1' => $row[17] ?? null,
                     'c2' => $row[18] ?? null,
                     'c3' => $row[19] ?? null,
@@ -76,7 +76,7 @@ class train_transaction_seeder extends Seeder
         
             TrainTransactionD::insert(
                 array(
-                    'train_transactions_id' => $row[0],
+                    'train_transaction_id' => $row[0],
                     'd1' => $row[31]  != '' ? $row[31] : null,
                     'd2' => $row[32] != '' ? $row[32] : null,
                     'd3' => $row[33]  != '' ? $row[33] : null,
@@ -97,7 +97,7 @@ class train_transaction_seeder extends Seeder
 
             TrainTransactionM::insert(
                 array(
-                    'train_transactions_id' => $row[0],
+                    'train_transaction_id' => $row[0],
                     'm1' => $row[46] ?? null,
                     'm2' => $row[47] ?? null,
                     'm3' => $row[48] ?? null,
@@ -112,7 +112,7 @@ class train_transaction_seeder extends Seeder
 
             TrainTransactionV1V50::insert(
                 array(
-                    'train_transactions_id' => $row[0],
+                    'train_transaction_id' => $row[0],
                     'v1' => $row[55] != '' ? $row[55] : null,
                     'v2' => $row[56] != '' ? $row[56] : null,
                     'v3' => $row[57] != '' ? $row[57] : null,
@@ -168,7 +168,7 @@ class train_transaction_seeder extends Seeder
 
             TrainTransactionV51V100::insert(
                 array(
-                    'train_transactions_id' => $row[0],
+                    'train_transaction_id' => $row[0],
                     'v51' => $row[105] != '' ? $row[105] : null,
                     'v52' => $row[106] != '' ? $row[106] : null,
                     'v53' => $row[107] != '' ? $row[107] : null,
@@ -224,7 +224,7 @@ class train_transaction_seeder extends Seeder
 
             TrainTransactionV101V150::insert(
                 array(
-                    'train_transactions_id' => $row[0],
+                    'train_transaction_id' => $row[0],
                     'v101' => $row[155] != '' ? $row[155] : null,
                     'v102' => $row[156] != '' ? $row[156] : null,
                     'v103' => $row[157] != '' ? $row[157] : null,
@@ -280,7 +280,7 @@ class train_transaction_seeder extends Seeder
 
             TrainTransactionV151V200::insert(
                 array(
-                    'train_transactions_id' => $row[0],
+                    'train_transaction_id' => $row[0],
                     'v151' => $row[205] != '' ? $row[205] : null,
                     'v152' => $row[206] != '' ? $row[206] : null,
                     'v153' => $row[207] != '' ? $row[207] : null,
@@ -336,7 +336,7 @@ class train_transaction_seeder extends Seeder
 
             TrainTransactionV201V250::insert(
                 array(
-                    'train_transactions_id' => $row[0],
+                    'train_transaction_id' => $row[0],
                     'v201' => $row[255] != '' ? $row[255] : null,
                     'v202' => $row[256] != '' ? $row[256] : null,
                     'v203' => $row[257] != '' ? $row[257] : null,
@@ -392,7 +392,7 @@ class train_transaction_seeder extends Seeder
 
             TrainTransactionV251V300::insert(
                 array(
-                    'train_transactions_id' => $row[0],
+                    'train_transaction_id' => $row[0],
                     'v251' => $row[305] != '' ? $row[305] : null,
                     'v252' => $row[306] != '' ? $row[306] : null,
                     'v253' => $row[307] != '' ? $row[307] : null,
@@ -437,7 +437,7 @@ class train_transaction_seeder extends Seeder
 
             TrainTransactionV301V339::insert(
                 array(
-                    'train_transactions_id' => $row[0],
+                    'train_transaction_id' => $row[0],
                     'v301' => $row[355] != '' ? $row[355] : null,
                     'v302' => $row[356] != '' ? $row[356] : null,
                     'v303' => $row[357] != '' ? $row[357] : null,

@@ -23,7 +23,7 @@ class test_identity_seeder extends Seeder
             if ( empty($row)) return false;
                return  TestIdentity::insert(
                     array(
-                        'test_transactions_id' => $row[0],
+                        'test_transaction_id' => $row[0],
                         'id_01' => $row[1] ? $row[1] : null,
                         'id_02' => $row[2] ? $row[2] : null,
                         'id_03' => $row[3] ? $row[3] : null,

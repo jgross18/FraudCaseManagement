@@ -23,7 +23,7 @@ class train_identity_seeder extends Seeder
             if ( empty($row)) return false;
                return  TrainIdentity::insert(
                     array(
-                        'train_transactions_id' => $row[0],
+                        'train_transaction_id' => $row[0],
                         'id_01' => $row[1] ? $row[1] : null,
                         'id_02' => $row[2] ? $row[2] : null,
                         'id_03' => $row[3] ? $row[3] : null,

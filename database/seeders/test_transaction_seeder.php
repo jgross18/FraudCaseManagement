@@ -32,6 +32,7 @@ class test_transaction_seeder extends Seeder
         $csv->each(function ($row)  {
             // return false if there is no data
             if ( empty($row)) return false;
+            /*
             TestTransaction::insert(
                 array(
                     'id' => $row[0],
@@ -55,7 +56,7 @@ class test_transaction_seeder extends Seeder
 
             TestTransactionC::insert(
                 array(
-                    'test_transactions_id' => $row[0],
+                    'test_transaction_id' => $row[0],
                     'c1' => $row[16]  != '' ? $row[16] :  null,
                     'c2' => $row[17] != '' ? $row[17] :  null,
                     'c3' => $row[18]  != '' ? $row[18] :  null,
@@ -75,7 +76,7 @@ class test_transaction_seeder extends Seeder
         
             TestTransactionD::insert(
                 array(
-                    'test_transactions_id' => $row[0],
+                    'test_transaction_id' => $row[0],
                     'd1' => $row[30]  != '' ? $row[30] : null,
                     'd2' => $row[31] != '' ? $row[31] : null,
                     'd3' => $row[32]  != '' ? $row[32] : null,
@@ -96,7 +97,7 @@ class test_transaction_seeder extends Seeder
 
             TestTransactionM::insert(
                 array(
-                    'test_transactions_id' => $row[0],
+                    'test_transaction_id' => $row[0],
                     'm1' => $row[45] ?? null,
                     'm2' => $row[46] ?? null,
                     'm3' => $row[47] ?? null,
@@ -109,51 +110,54 @@ class test_transaction_seeder extends Seeder
                 )
             );
 
-            $v1v50 = array('test_transactions_id' => $row[0]);
+            $v1v50 = array('test_transaction_id' => $row[0]);
             for ($i = 1; $i <= 50; $i++) {
                 array_merge($v1v50, array('v' . strval($i) => $row[53 + $i] != '' ? $row[53 + $i] : null));
             }
             TestTransactionV1V50::insert($v1v50);
 
-            $v51v100 = array('test_transactions_id' => $row[0]);
+            $v51v100 = array('test_transaction_id' => $row[0]);
             for ($i = 51; $i <= 100; $i++) {
                 array_merge($v51v100, array('v' . strval($i) => $row[53 + $i] != '' ? $row[53 + $i] : null));
             }
 
             TestTransactionV51V100::insert($v51v100); 
 
-            $v101v150 = array('test_transactions_id' => $row[0]);
+            $v101v150 = array('test_transaction_id' => $row[0]);
             for ($i = 101; $i <= 150; $i++) {
                 array_merge($v101v150, array('v' . strval($i) => $row[53 + $i] != '' ? $row[53 + $i] : null));
             }
 
             TestTransactionV101V150::insert($v101v150); 
-
-            $v151v200 = array('test_transactions_id' => $row[0]);
+            */
+            $v151v200 = array('test_transaction_id' => $row[0]);
             for ($i = 151; $i <= 200; $i++) {
-                array_merge($v151v200, array('v' . strval($i) => $row[103 + $i] != '' ? $row[53 + $i] : null));
+                array_merge($v151v200, array('v' . strval($i) => $row[53 + $i] != '' ? $row[53 + $i] : null));
             }
 
-            TestTransactionV51V100::insert($v151v200); 
-
-            $v201v250 = array('test_transactions_id' => $row[0]);
+            TestTransactionV151V200::insert($v151v200); 
+        /*
+            $v201v250 = array('test_transaction_id' => $row[0]);
             for ($i = 201; $i <= 250; $i++) {
                 array_merge($v201v250, array('v' . strval($i) => $row[53 + $i] != '' ? $row[53 + $i] : null));
             }
             TestTransactionV201V250::insert($v201v250);
 
-            $v251v300 = array('test_transactions_id' => $row[0]);
+            $v251v300 = array('test_transaction_id' => $row[0]);
             for ($i = 251; $i <= 300; $i++) {
                 array_merge($v201v250, array('v' . strval($i) => $row[53 + $i] != '' ? $row[53 + $i] : null));
             }
             TestTransactionV251V300::insert($v251v300);
 
-            $v301v339 = array('test_transactions_id' => $row[0]);
+            $v301v339 = array('test_transaction_id' => $row[0]);
             for ($i = 301; $i <= 339; $i++) {
                 array_merge($v301v339, array('v' . strval($i) => $row[53 + $i] != '' ? $row[53 + $i] : null));
             }
             TestTransactionV301V339::insert($v301v339);
+        */
             return true;
+    
         });
+    
     }
 }
